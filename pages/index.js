@@ -14,6 +14,13 @@ export default function Home() {
           <a href="https://evansexteriorcleaning.co.uk/">Evans Exterior cleaning!</a>
         </h1>
 
+
+        <a href="mailto:info@evansexteriorcleaning.co.uk" className={styles.card}
+>
+          <h3>Contact &rarr;</h3>
+          <p>info@evansexteriorcleaning.co.uk</p>
+        </a>
+
       </main>
 
       <footer className={styles.footer}>
