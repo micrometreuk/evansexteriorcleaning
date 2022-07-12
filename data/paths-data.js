@@ -10,38 +10,31 @@ export const data = [
             icons: FaHome
          },
          {
-            name: 'Domestic ',
-            title: "Domestic Services",
-            subtitle: "Domestic Services",
-            href: '/domestic ',
+            name: 'Driveway Cleaning',
+            title: "Driveway Cleaning Services",
+            subtitle: "Driveway Cleaning Services",
+            href: '/',
             icons: FaAddressCard
          },
          {
-            name: 'commercial ',
-            title: "Commercial Services",
-            subtitle: "Commercial Services",
-            href: '/commercial ',
+            name: 'Why choose us? ',
+            title: "Why choose us?",
+            subtitle: "Why choose us?",
+            href: '/',
             icons: FaAddressCard
          },
          {
-            name: 'External ',
-            title: "External Electrical ",
-            subtitle: "External Electrical",
-            href: '/external',
+            name: 'Services we offer',
+            title: "Services we offer",
+            subtitle: "Services we offer",
+            href: '/',
             icons: FaAddressCard
          },
          {
-            name: 'Car Charging',
-            title: "Electric Car Charging",
-            subtitle: "Electric Car Charging ",
-            href: '/electriccar',
-            icons: FaAddressCard
-         },
-         {
-            name: 'Making Good',
-            title: "Electric Car Charging",
-            subtitle: "Electric Car Charging",
-            href: '/makinggood',
+            name: 'Areas we cover',
+            title: "Areas we cover",
+            subtitle: "Areas we cover",
+            href: '/',
             icons: FaAddressCard
          },
          {

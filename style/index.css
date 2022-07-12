@@ -1,12 +1,11 @@
 /* ensure all pages have Bootstrap CSS */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 
 
 body {
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
   background: #fff;
-
+  font-family: sans-serif;
 }
 
 
@@ -30,7 +29,6 @@ a {
   font-size: 40px;
   font-weight: bolder;
   line-height: 1em;
-  background: #a2ebf8;
 }
 
 .navbar {

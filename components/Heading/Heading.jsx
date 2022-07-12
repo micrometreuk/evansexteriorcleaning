@@ -7,7 +7,7 @@ import { data } from "../../data/contact-data";
 
 export function Header() {
   const contactIconsStyles = { fontSize: "1.4em", color: "white" };
-  const socialIconStyles = { fontSize: "1.4em", color: "white" };
+  const socialIconStyles = { fontSize: "1.8em", color: "white" };
 
   return (
     <>
