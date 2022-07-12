@@ -1,2 +1,2 @@
 #!/bin/bash -xv
-rm -rf .next
+rm -rf .next out
