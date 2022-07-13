@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Container, Row, Card, Button } from 'react-bootstrap'
 export default function MakingGood() {
   return (
