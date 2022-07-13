@@ -31,10 +31,20 @@ a {
   line-height: 1em;
 }
 
+.nav {
+  background-color: #1aaac7;
+  font-weight: 400;
+  font-weight: bolder;
+  line-height: 1em;
+}
+
 .navbar {
+  font-weight: 400;
+  font-weight: bolder;
+  line-height: 1em;
   padding-top: 0.0rem;
   padding-bottom: 0.0rem;
-          background-color: #1aaac7;
+  background-color: #1aaac7;
 }
 
 .md-container {
