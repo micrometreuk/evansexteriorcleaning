@@ -41,7 +41,7 @@ export const data = [
             name: 'Contact',
             title: "Contact page",
             subtitle: "homepage ",
-            href: '/contact',
+            href: '/',
             icons: FaAddressCard
          },
       ]

@@ -1,17 +1,10 @@
 import { data } from "../../data/paths-data";
 import { Offcanvas, Navbar, Container, Nav, NavDropdown, } from "react-bootstrap";
-const pathsIconStyles = { fontSize: "1.0em", color: "white" };
+const pathsIconStyles = { fontSize: 18, color: "#fff" };
 const offcanvasToggle = {
     color: "#fff",
-    backgroundColor: "#fff",
-    border: "4px solid #fff",
-    borderRadius: 11,
     fontSize: 17,
-    fontWeight: "bold",
-    letterSpacing: 1,
-    padding: "4px 6px",
-    marginLeft: 10,
-    lineHeight: 1,
+    color: "white",
 }
 const offcanvasContainer = {
     padding: 0,

@@ -5,7 +5,7 @@ export const socialdata = [
       {
         title: "Contact us with Whatsup",
         subtitle: "Whatsup Icon",
-        href: "/",
+        href:   "tel:0<",
         icons: FaWhatsapp
       },
       {

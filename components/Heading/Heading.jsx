@@ -2,41 +2,45 @@ import Nav from 'react-bootstrap/Nav';
 import { data } from "../../data/contact-data";
 import { socialdata } from "../../data/social-data";
 
-const phoneLinksStyles = { fontSize: "1.0em", color: "white" };
-const phoneIconStyles = { fontSize: "2.5em", color: "white" };
 const socialIconStyles = {
-  fontSize: "2.7em",
+  fontSize: 48,
   color: "white",
-  borderRadius: "4rem",
-  top: "10px",
-  right: "20px",
+  padding: "0 0.8rem",
 };
-const headingFontsStyle = { fontSize: "1.0em", color: "white" };
+const headingFontsStyle = {
+  color: "white",
+  lineHeight: 1.5,
+  fontSize: 20,
+  fontWeight: "bold",
+
+};
 
 function AlignmentExample() {
   return (
     <>
-      <Nav className="justify-content-around d-flex text-light" activeKey="/home">
-          {data.map((e, i) => {
-            return (
-              <div className="phonesdiv" key={i}>
-                {e.contact.map((e, i) => {
-                  return (
-                    <a
-                      style={headingFontsStyle}
-                      className="phoneLinksStyles"
-                      href={e.href}
-                      key={i}
-                      title={e.title}
+      <Nav className="justify-content-between d-flex text-light" activeKey="/home">
+        {data.map((e, i) => {
+          return (
+            <div className="phonesdiv" key={i}>
+              {e.contact.map((e, i) => {
+                return (
+                  <a
+                    style={headingFontsStyle}
+                    href={e.href}
+                    key={i}
+                    title={e.title}
+                  >
+                    <e.icons
+                      style={socialIconStyles}
                     >
-                      <e.icons className="phoneIconsStyles"></e.icons>
-                      {e.name}
-                    </a>
-                  );
-                })}
-              </div>
-            );
-          })}
+                    </e.icons>
+                    {e.name}
+                  </a>
+                );
+              })}
+            </div>
+          );
+        })}
         {socialdata.map((e, i) => {
           return (
             <div className="socialdiv" key={i}>
