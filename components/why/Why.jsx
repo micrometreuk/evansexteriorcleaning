@@ -4,7 +4,7 @@ import { Container, Row, Card, Button } from 'react-bootstrap'
 
 export default function Why() {
   return (
-    <Container className="lml-container">
+    <Container className="md-container">
         <Card className="mml-card ">
           <Card.Body>
             <Card.Text>
