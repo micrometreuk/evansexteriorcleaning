@@ -39,7 +39,6 @@ export function HomePage() {
   return (
     <div style={styles.homePage}>
       <Layout>
-        <Heading/>
         <NavBarPaths/>
         <motion.section
           exit={{ opacity: 0 }}
