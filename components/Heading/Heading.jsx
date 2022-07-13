@@ -15,7 +15,7 @@ const headingFontsStyle = {
 
 };
 
-function AlignmentExample() {
+function Heading() {
   return (
     <>
       <Nav className="justify-content-between d-flex text-light" activeKey="/home">
@@ -68,4 +68,4 @@ function AlignmentExample() {
   );
 }
 
-export default AlignmentExample;
+export default Heading

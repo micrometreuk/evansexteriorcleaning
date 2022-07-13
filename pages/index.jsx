@@ -5,6 +5,7 @@ import Heading from "../components/Heading";
 import NavBarPaths from "../components/nav/NavbarPaths";
 import LogoCard from "../components/Logo/Logo";
 import Moto from "../components/Moto/Moto";
+import Why from "../components/why/Why";
 const content = {
   animate: {
     transition: { staggerChildren: 0.1 },
@@ -54,6 +55,7 @@ export function HomePage() {
             >
               <LogoCard />
               <Moto />
+              <Why />
             </motion.div>
           </motion.div>
         </motion.section>
