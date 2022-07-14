@@ -16,7 +16,7 @@ export function DrivewayTitle() {
 export function DriveWayHero() {
   return (
     <div className="drivewaycontainer">
-      <main>
+      <div className='drivemain'>
         <div className="grid">
           <div 
           className="card">
@@ -47,7 +47,7 @@ export function DriveWayHero() {
               </p>
           </div>
         </div>
-      </main>
+      </div>
       <style jsx>{`
         .drivewaycontainer {
           padding: 0 0.5rem;
@@ -65,7 +65,7 @@ export function DriveWayHero() {
           align-items: center;
         }
 
-        main {
+        .drivemain {
           padding: 5rem 0;
           flex: 1;
           display: flex;

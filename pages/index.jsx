@@ -6,6 +6,7 @@ import NavBarPaths from "../components/nav/NavbarPaths";
 import LogoCard from "../components/Logo/Logo";
 import Moto from "../components/Moto/Moto";
 import DriveWays from "../components/DriveWays/DriveWays";
+import Carousel from "../components/Carousel/Carousel";
 import Services from "../components/services/Services";
 import Why from "../components/why/Why";
 const content = {
@@ -58,6 +59,7 @@ export function HomePage() {
               <LogoCard />
               <Moto />
               <DriveWays />
+              <Carousel />
             </motion.div>
           </motion.div>
         </motion.section>

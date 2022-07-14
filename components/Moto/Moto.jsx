@@ -1,95 +1,88 @@
-import * as React from "react";
-import { motion } from "framer-motion";
-import { images } from "../../data/images-data";
+import { Container, Row, Card, Button } from 'react-bootstrap'
 
-export function EvBrands({ id, i }) {
+
+export function DriveWayHero() {
   return (
-    <>
-      <motion.div className="motodiv"
-      
-      >
-        <motion.img
-          src={`/images/${id}?auto=format&fit=crop&w=1500`}
-          alt="evansexteriorcleaning"
-        />
-        <div className="centered"
-        >
-        Professional exterior cleaning services.
+    <div className="drive-container">
+      <div className='drive-main'>
+        <div className="drive-grid">
+          <div className="drive-heading">
+            <h1 className="drive-title">
+              Professional exterior cleaning services.
+
+            </h1>
+          </div>
         </div>
+      </div>
+      <style jsx>{`
+        .drive-container {
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.2)
+            ),
+            url(./images/5.webp);
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          align-items: center;
+        }
 
-      </motion.div>
-      <style>
-        {`
-
-.frame {
-overflow: hidden;
- }
-
-.motodiv img {
- width: 100%;
- border: 7px solid teal;
- height: 100%;
-
-}
-
-
-.motodiv{
-  position: relative;
-  text-align: center;
-  color: white;
+        .drive-main {
+          padding: 5rem 0;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .drive-grid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 3rem;
+        }
+        .drive-title {
+  padding: 3;
+  margin: 5;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bolder;
   line-height: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: #fff;
 }
 
 
-.centered {
-  position: absolute;
-  top: 55%;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media (max-width: 600px) {
-  .motodiv {
-  font-size: 40px;
-    width: 100%;
-    flex-direction: column;
-  }
-}
+        @media (max-width: 600px) {
+          .drive-title{
+  font-size: 50px;
 
 
-        `}
-      </style>
-    </>
-  );
-}
-
-export function EvBrandsImages() {
-  return (
-    <>
-      <motion.div className="overlay"
-      >
-        {images.map((id, i) => (
-          <EvBrands key={id} id={id} i={i} />
-        ))}
-      </motion.div>
-      <style>
-        {`
-        .overlay{
-
+          }
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
         }
-        `}
-      </style>
-    </>
-  );
+      `}</style>
+    </div>
+  )
 }
 
 
-export default EvBrandsImages;
+
+
+
+export function Driveway() {
+  return (
+    <div className="driveway">
+      <DriveWayHero />
+    </div>
+  );
+}
+
+export default Driveway;
