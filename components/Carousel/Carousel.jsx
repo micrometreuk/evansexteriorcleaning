@@ -76,7 +76,7 @@ export function EvBrandsImages() {
       <style>
         {`
         .eVgallery {
-            padding: 19px;
+            padding: 1px;
             margin: 0rem;
             width: 100%;
         }
@@ -98,7 +98,7 @@ export function EvBrandsMarquee() {
       <Marquee 
       gradient={false} 
       pauseOnHover={true}
-      speed={20}
+      delay={20}
       >
         <EvBrandsImages />
       </Marquee>

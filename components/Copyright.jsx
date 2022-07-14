@@ -1,6 +1,5 @@
-import Link from "next/link";
 
-function CopyRight() {
+export function CopyRight() {
   const current = new Date();
   const date = `${current.getDate()}/${
     current.getMonth() + 1
@@ -13,7 +12,7 @@ function CopyRight() {
           <div  className="copyright-card">
             <p className="copyright-description">
               Copyright ©{year}
-              <code>Electricalsurrey Ltd.</code>
+              <code>Evans Exterior Cleaning Ltd.</code>
             </p>
           </div>
         </div>
@@ -41,7 +40,6 @@ function CopyRight() {
         .copyright-description {
           text-align: center;
           text-decoration: none;
-          color: #fff;
           line-height: 1.3;
           font-size: 0.9rem;
         }
@@ -49,7 +47,6 @@ function CopyRight() {
         code {
           border-radius: 5px;
           padding: 0.75rem;
-          color: #fff;
           font-size: 0.8rem;
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
