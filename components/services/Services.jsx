@@ -6,7 +6,6 @@ export default function MakingGood() {
         <Card className="mml-card ">
           <Card.Body>
             <Card.Text>
-              <p className="description ">
                 <br />
                 Pressure washing
                 <br />
@@ -26,7 +25,6 @@ export default function MakingGood() {
                 <br />
                 Garden furniture cleaning
                 <br />
-              </p>
             </Card.Text>
           </Card.Body>
         </Card>

@@ -6,7 +6,6 @@ import NavBarPaths from "../components/nav/NavbarPaths";
 import LogoCard from "../components/Logo/Logo";
 import Moto from "../components/Moto/Moto";
 import DriveWays from "../components/DriveWays/DriveWays";
-import Marquee from "../components/Marquee";
 import Services from "../components/services/Services";
 import Why from "../components/why/Why";
 const content = {
@@ -58,7 +57,6 @@ export function HomePage() {
             >
               <LogoCard />
               <Moto />
-              <Marquee />
               <Services />
               <Why />
             </motion.div>

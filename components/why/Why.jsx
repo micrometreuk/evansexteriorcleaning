@@ -8,7 +8,6 @@ export default function Why() {
         <Card className="mml-card ">
           <Card.Body>
             <Card.Text>
-              <p className="description ">
                 <br />
                 Why choose us?
                 <br />
@@ -22,7 +21,6 @@ export default function Why() {
                 <br />
                 • Highly experienced
                 <br />
-              </p>
             </Card.Text>
           </Card.Body>
         </Card>

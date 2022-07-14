@@ -3,8 +3,14 @@ import { Offcanvas, Navbar, Container, Nav, NavDropdown, } from "react-bootstrap
 const pathsIconStyles = { fontSize: 18, color: "#fff" };
 const offcanvasToggle = {
     color: "#fff",
-    fontSize: 17,
-    color: "white",
+    backgroundColor: "#fff",
+    border: "4px solid #fff",
+    borderRadius: 22,
+    fontSize: 14,
+    fontWeight: "bold",
+    letterSpacing: 1,
+    padding: 8,
+    marginLeft: "40%",
 }
 const offcanvasContainer = {
     padding: 0,
@@ -33,12 +39,6 @@ const offcanvasTitle = {
 
 };
 const offcanvasBody = { padding: 0, height: "100%" };
-const OffcanvasLinks = {
-    color: "#fff",
-    textDecoration: "none",
-    padding: 8,
-    margin: 8,
-};
 
 export function NavbarLinks() {
     return (

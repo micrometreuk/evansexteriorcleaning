@@ -6,6 +6,7 @@ const socialIconStyles = {
   fontSize: 48,
   color: "white",
   padding: "0 0.8rem",
+    marginLeft: "11px",
 };
 const headingFontsStyle = {
   color: "white",
