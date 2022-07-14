@@ -1,75 +1,126 @@
-
 import { Container, Row, Card, Button } from 'react-bootstrap'
 
-export default function Home() {
+
+export function DrivewayTitle() {
   return (
-    <Container className="md-container text-white">
-      <Container className="md-container">
-        <Card className="mml-card text-white">
-          <Card.Body>
-            <Card.Title>
-              <p className="description ">
-                Surrey electrical and car charging offer a full electrical service for all domestic and commercial properties. Our fully qualified engineers work to regulation standards in design, installation and niceic certification.
-              </p>
-            </Card.Title>
-          </Card.Body>
-        </Card>
-        <Container className="md-container">
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>
-                  <p className="intro-description">
-                    We work a to very high standard and pride ourselves on being 100% honest.
-                  </p>
-                </Card.Title>
-                <Image
-                  src="/images/2.webp"
-                  alt="About picture"
-                  width={498}
-                  height={300}
-                  priority
-
-                />
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>
-                  <p className="intro-description">
-                    We are always dependable and time keeping is one of strongest points.
-                  </p>
-                </Card.Title>
-
-                <Image
-                  src="/images/3.webp"
-                  alt="About picture"
-                  width={498}
-                  height={300}
-                  priority
-                />
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>
-                  <p className="intro-description">
-                    Care and attention to our clients is something that sets us apart.
-                  </p>
-                </Card.Title>
-                <Image
-                  src="/images/2.webp"
-                  alt="About picture"
-                  width={498}
-                  height={300}
-                  priority
-                />
-              </Card.Body>
-            </Card>
-          </Row>
-        </Container>
-      </Container>
-
+    <Container className="md-container p-4">
+      <div className="cntr-title">
+        <h1 className="display-1 text-center">
+          Driveway Cleaning
+        </h1>
+      </div>
     </Container>
   )
 }
+
+export function DriveWayHero() {
+  return (
+    <div className="drivewaycontainer">
+      <main>
+        <div className="grid">
+          <div 
+          className="card">
+            <p>
+            Driveway cleaning can transform the look of your driveway 
+          Our driveway pressure washing service ensures a perfect finish every time. 
+
+            </p>
+          </div>
+
+          <div 
+           className="card">
+            <p>
+            Our pledge is to arrive on time,
+             perform an efficient driveway cleaning service and clear away all mess, 
+            all at an affordable price.
+              </p>
+          </div>
+
+          <div
+            className="card"
+          >
+            <p>
+              We offer pressure washing, soft washing, 
+              kiln dried sand finish and a driveway sealing option.
+
+              
+              </p>
+          </div>
+        </div>
+      </main>
+      <style jsx>{`
+        .drivewaycontainer {
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.2)
+            ),
+            url(./images/11.webp);
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          align-items: center;
+        }
+
+        main {
+          padding: 5rem 0;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .grid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          margin-top: 3rem;
+        }
+
+        .card {
+          margin: 1rem;
+          flex-basis: 45%;
+          padding: 1.5rem;
+          text-align: left;
+          color: inherit;
+          text-decoration: none;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+        }
+        .card p {
+          margin: 0;
+          font-size: 1.25rem;
+          line-height: 1.5;
+        }
+
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+      `}</style>
+    </div>
+  )
+}
+
+
+
+
+
+export function Driveway() {
+  return (
+    <div className="driveway">
+      <DrivewayTitle />
+      <DriveWayHero />
+    </div>
+  );
+}
+
+export default Driveway;

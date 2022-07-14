@@ -1,3 +1,3 @@
 export const images = [
-  '2.webp',
+  '1.webp',
 ]

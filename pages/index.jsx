@@ -57,8 +57,7 @@ export function HomePage() {
             >
               <LogoCard />
               <Moto />
-              <Services />
-              <Why />
+              <DriveWays />
             </motion.div>
           </motion.div>
         </motion.section>

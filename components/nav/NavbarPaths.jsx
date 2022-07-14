@@ -47,6 +47,8 @@ export function NavbarLinks() {
                 <Container style={offcanvasContainer} >
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`}
                         style={offcanvasToggle}
+                        aria-labelledby="offcanvasNavbar-expand"
+
                     />
                     <Navbar.Offcanvas id={`offcanvasNavbar-expand`} aria-labelledby={`offcanvasNavbarLabel`} placement="start"
                         style={OffcanvasNav}
