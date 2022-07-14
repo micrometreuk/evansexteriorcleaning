@@ -8,8 +8,8 @@ import Moto from "../components/Moto/Moto";
 import DriveWays from "../components/DriveWays/DriveWays";
 import Carousel from "../components/Carousel/Carousel";
 import Services from "../components/services/Services";
+import WhyCard from "../components/why/Why";
 import CopyRight from "../components/Copyright";
-import Why from "../components/why/Why";
 const content = {
   animate: {
     transition: { staggerChildren: 0.1 },
@@ -61,6 +61,7 @@ export function HomePage() {
               <Moto />
               <DriveWays />
               <Services />
+              <WhyCard />
               <Carousel />
               <CopyRight />
             </motion.div>

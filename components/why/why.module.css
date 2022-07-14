@@ -1,0 +1,24 @@
+.container {
+  padding: 0rem;
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.externaltitle {
+  padding: 0.0rem;
+  margin: 0rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 95%;
+    flex-direction: column;
+  }
+}
