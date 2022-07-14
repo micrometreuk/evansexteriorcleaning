@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap'
 const logobg = {
   padding: "0rem",
   margin: "0rem",
-  backgroundImage: "url(/images/logo.webp)",
+  backgroundImage: "url(/images/logo2.webp)",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   backgroundSize: "600px 600",
