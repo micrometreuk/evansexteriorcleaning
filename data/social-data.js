@@ -1,11 +1,11 @@
-import { FaFacebook, FaGem, FaBars, FaTwitter, FaInstagram, FaEnvelope, FaWhatsapp, FaYoutube } from 'react-icons/fa';
+import { FaFacebook,  FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 export const socialdata = [
   {
     socialLinks: [
       {
         title: "Contact us with Whatsup",
         subtitle: "Whatsup Icon",
-        href:   "tel:0<",
+        href: "whatsapp://send?abid=+447445549727&text=Hello%2C%20World!",
         icons: FaWhatsapp
       },
       {

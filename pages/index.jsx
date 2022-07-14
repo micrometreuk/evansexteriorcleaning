@@ -9,6 +9,8 @@ import DriveWays from "../components/DriveWays/DriveWays";
 import Carousel from "../components/Carousel/Carousel";
 import Services from "../components/services/Services";
 import WhyCard from "../components/why/Why";
+import Map from "../components/Map/Map";
+import NavBarFooter from "../components/nav/NavbarFooter";
 import CopyRight from "../components/Copyright";
 const content = {
   animate: {
@@ -63,6 +65,8 @@ export function HomePage() {
               <Services />
               <WhyCard />
               <Carousel />
+              <Map />
+              <NavBarFooter />
               <CopyRight />
             </motion.div>
           </motion.div>

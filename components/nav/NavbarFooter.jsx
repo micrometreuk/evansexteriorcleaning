@@ -42,7 +42,7 @@ export function NavBarFooter({ name, href, ...props }) {
           display: flex;
           align-items: center;
           justify-content: space-evenly;
-          background-color: #23513e;
+          background-color: #1aaac7;
           text-decoration: none;
           font-size: 1.4rem;
         }
