@@ -95,9 +95,6 @@ export function EvBrandsImages() {
 export function EvBrandsMarquee() {
   return (
     <div className="evBrandMarquee">
-      <p className="description " style={{textAlign: "center", padding:3, color: "#fff",}}>
-        We have a passion for helping homeowners make the most of cheaper environmentally friendly driving.
-      </p>
       <Marquee 
       gradient={false} 
       pauseOnHover={true}
