@@ -118,11 +118,11 @@ export function OffcanvasExample() {
                 <Nav className="justify-content-around flex-grow-1 pe-3 "
                 >
                   <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/">Driveway Cleaning</Nav.Link>
-                  <Nav.Link href="/">Why choose us</Nav.Link>
-                  <Nav.Link href="/">Services we offer</Nav.Link>
-                  <Nav.Link href="/">Areas we cover</Nav.Link>
-                  <Nav.Link href="/">Contact</Nav.Link>
+                  <Nav.Link href="/drive">Driveway Cleaning</Nav.Link>
+                  <Nav.Link href="/whyus">Why choose us</Nav.Link>
+                  <Nav.Link href="/services">Services we offer</Nav.Link>
+                  <Nav.Link href="/areas">Areas we cover</Nav.Link>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
