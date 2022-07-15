@@ -40,13 +40,11 @@ const inputs = {
     },
   },
 };
-
 export function HomePage() {
   return (
     <div style={styles.homePage}>
       <Layout>
-        <Heading/>
-        <motion.section
+      <motion.section
           exit={{ opacity: 0 }}
         >
           <motion.div
@@ -62,10 +60,9 @@ export function HomePage() {
               <DriveWays />
               <Services />
               <WhyCard />
-              <Carousel />
               <Map />
               <CopyRight />
-            </motion.div>
+              </motion.div>
           </motion.div>
         </motion.section>
       </Layout>

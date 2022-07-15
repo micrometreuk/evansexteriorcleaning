@@ -1,6 +1,6 @@
 import Head from "next/head";
 export const siteTitle = "Professional exterior cleaning services.";
-
+import Heading from "../components/Heading";
 export default function Layout({ children }) {
   return (
     <div className="section">
@@ -20,6 +20,7 @@ export default function Layout({ children }) {
         />
         <title>{siteTitle}</title>
       </Head>
+        <Heading/>
       <main> {children}</main>
 
     </div>

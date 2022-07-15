@@ -1,53 +1,67 @@
-import { Container, Row, Card, Button } from 'react-bootstrap'
-const whybg = {
-  padding: "0rem",
-  margin: "0rem",
-  backgroundImage: "url(/images/logo2.webp)",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "600px 600",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
+export function AreasMap() {
+  const src = `/img/bathroom2.jpg`;
 
-}
-export function Map() {
   return (
-    <>
-      <Container className="md-container" style={{ textDecoration: 'none' }}>
-      <Card className="mml-card ">
-          <Card.Body>
-            <Card.Title>
-              <h1 className="display-1 text-center">
-                Areas we cover
-              </h1>
-            </Card.Title>
-          </Card.Body>
-        </Card>
-        <Row className="justify-content-md-between">
-          <Card className="mml-card">
-            <Card.Body>
-              <Card.Text>
-                <p className="description ">
-                  Esher, Walton on Thames, Weybridge, Claygate, East Molesey, Cobham, Hersham, Oxshott, Thames Ditton, Long Ditton, Stoke D’Abernon, Hinchley Wood, Downside, St Georges Hill, Weston Green, Whiteley Village, Byfleet, West End and Oatlands, Hampton, Hampton Court, Thames Ditton, Long Ditton, Kingston, Surbiton, New Malden, Worcester Park, Wimbledon, Twickenham, St Margarets,  Richmond, Teddington, Sunbury on Thames, Shepperton, Staines, Egham, Virginia Water, Addlestone, Chertsey, Englefield Green, Old Windsor, Staines, Addlestone, New Haw, Purford, West Byfleet.
+    <div className="map-container">
+      <main>
+            <h1 className="title">Areas we cover</h1>
+        <p className="description">
+Esher, Walton on Thames, Weybridge, Claygate, 
+East Molesey, Cobham, Hersham, Oxshott, 
+Thames Ditton, Long Ditton, Stoke D’Abernon, 
+Hinchley Wood, Downside, St Georges Hill, 
+Weston Green, Whiteley Village, Byfleet, 
+West End and Oatlands, Hampton, 
+Hampton Court, Thames Ditton, 
+Long Ditton, Kingston, Surbiton, 
+New Malden, Worcester Park, 
+Wimbledon, Twickenham, St Margarets, 
+Richmond, Teddington, Sunbury on Thames, 
+Shepperton, Staines, Egham, 
+Virginia Water, Addlestone, Chertsey, 
+Englefield Green, Old Windsor, 
+Staines, Addlestone, 
+New Haw, Purford, West Byfleet.
+        </p>
+      </main>
+      <style jsx>{`
+        .map-container {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        main {
+          padding-bottom: 0.1rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .title {
+          text-decoration: none;
+          text-decoration: underline;
+        }
+        .title {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 3rem;
+        }
 
-                </p>
-              </Card.Text>
-            </Card.Body>
-            <Card.Title>
-              <h2 className="text-center">
-                Contact us for a free no obligation quote
-              </h2>
-            </Card.Title>
-          </Card>
-        </Row>
-      </Container>
-    </>
+        .title,
+        .description {
+          text-align: center;
+        }
+
+        .description {
+          line-height: 1.5;
+          font-size: 1rem;
+        }
+      `}</style>
+    </div>
   );
 }
-
-
-
-
-export default Map;
+export default AreasMap;

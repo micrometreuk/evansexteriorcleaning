@@ -1,79 +1,105 @@
-import { Container, Row, Card, Button } from 'react-bootstrap'
-const whybg = {
-  padding: "0rem",
-  margin: "0rem",
-  backgroundImage: "url(/images/logo2.webp)",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "600px 600",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
 
-}
-export function Contact() {
+export function WhyUs() {
   return (
-    <>
-      <Container className="md-container" style={{ textDecoration: 'none' }}>
-      <Card className="mml-card ">
-          <Card.Body>
-            <Card.Title>
-              <h1 className="display-1 text-center">
-                Why choose us ?
-              </h1>
-            </Card.Title>
-          </Card.Body>
-        </Card>
-        <Row className="justify-content-md-between">
-          <Card className="lml-card">
-            <Card.Body>
-              <Card.Text>
-                <p className="description ">
-                  <br/>
- Fully insured
-                  <br/>
- Honest and reliable
-                  <br/>
- Friendly and trustworthy
-                  <br/>
- Efficient
-                  <br/>
- Highly experienced
-                  <br/>
+    <div className="about-container">
+      <main>
+        <h1 className="title">Why choose us ?</h1>
+        <div className="row">
+          <div className="column">
+            <div className="whyimage">
+            </div>
+          </div>
+          <div className="column">
+            <p>
+              Fully insured
+              <br />
+              Honest and reliable
+              <br />
+              Friendly and trustworthy
+              <br />
+              Efficient
+              <br />
+              Highly experienced
+            </p>
+          </div>
+        </div>
+      </main>
 
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-
-          <Card className="lml-card text-white">
-            <Card.Body >
-              <Card.Text style={whybg}>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-
-              </Card.Text>
-            </Card.Body>
-          </Card>
+      <style jsx>{`
+        .whyimage{
+          background-image: 
+            
+            url(./images/logo2.webp);
+          background-repeat: no-repeat;
+          background-size: auto;
+          width: 100%;
+          min-height: 38vh;
+          min-width: 42vh;
 
 
+        }
+        .about-container {
+          padding: 0.1rem;
+          margin-top: 1.9rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
-        </Row>
-      </Container>
-    </>
+        main {
+          padding: 16px;
+          padding: 2rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+        }
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          background: #ffffff;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .title {
+          margin: 1rem;
+          font-size: 4rem;
+          text-align: center;
+    font-weight: 300;
+    line-height: 1.2;
+        }
+
+        p {
+          text-align: left;
+          line-height: 1.7;
+          font-size: 2.09rem;
+          margin: .5rem;
+          flex-basis: 45%;
+          padding: 0.5rem;
+          text-align: left;
+          text-decoration: none;
+           font-weight: 300;
+        }
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+          p {
+            line-height: 1.8;
+          }
+        }
+      `}</style>
+    </div>
   );
 }
-
-
-
-
-export default Contact;
+export default WhyUs;

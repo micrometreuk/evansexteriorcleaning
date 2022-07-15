@@ -49,7 +49,6 @@ const offcanvasToggle = {
 export function OffcanvasExample() {
   return (
     <>
-      <div>
         <Navbar expand="lg"
           style={{
             borderRadius: "3px",
@@ -72,7 +71,6 @@ export function OffcanvasExample() {
             </a>
           </Navbar.Text>
           <Navbar.Text>
-            <Nav.Link href="#action1">
               <a 
               href="mailto:info@evansexteriorcleaning.co.uk"
               title="Email evans exterior cleaning"
@@ -81,7 +79,6 @@ export function OffcanvasExample() {
                 <FaEnvelope size={38} />
                 info@evansexteriorcleaning.co.uk
               </a>
-            </Nav.Link>
           </Navbar.Text>
           <Navbar.Text
           >
@@ -101,21 +98,20 @@ export function OffcanvasExample() {
         </Navbar>
         <>
         </>
-        {[true].map((expand) => (
           <Navbar expand="lg" bg="light" variant="light" className="mb-0">
-            <Navbar.Toggle  aria-labelledby="offcanvasNavbar" aria-controls={`offcanvasNavbar-expand-${expand}`} 
+            <Navbar.Toggle  aria-labelledby="offcanvasNavbar" aria-controls={`offcanvasNavbar-expand`} 
             
               style={offcanvasToggle}
             />
             <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              id={`offcanvasNavbar-expand`}
+              aria-labelledby={`offcanvasNavbarLabel-expand`}
               placement="start"
               style={OffcanvasNav}
 
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -131,8 +127,6 @@ export function OffcanvasExample() {
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Navbar>
-        ))}
-      </div>
       <style>
 
       </style>
