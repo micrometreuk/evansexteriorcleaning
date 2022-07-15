@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import Layout from "../components/layout";
 import styles from "../style/Home.module.css";
 import Heading from "../components/Heading";
-import NavBarPaths from "../components/nav/NavbarPaths";
 import LogoCard from "../components/Logo/Logo";
 import Moto from "../components/Moto/Moto";
 import DriveWays from "../components/DriveWays/DriveWays";
@@ -47,7 +46,6 @@ export function HomePage() {
     <div style={styles.homePage}>
       <Layout>
         <Heading/>
-        <NavBarPaths/>
         <motion.section
           exit={{ opacity: 0 }}
         >
@@ -66,7 +64,6 @@ export function HomePage() {
               <WhyCard />
               <Carousel />
               <Map />
-              <NavBarFooter />
               <CopyRight />
             </motion.div>
           </motion.div>

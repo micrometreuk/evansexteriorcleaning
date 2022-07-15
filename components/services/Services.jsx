@@ -14,7 +14,7 @@ export default function Services() {
             </Card.Title>
           </Card.Body>
         </Card>
-        <Container className="md-container text-white">
+        <Container className="md-container">
           <Row className="justify-content-md-between">
             <Card className="sml-card">
               <Card.Body>

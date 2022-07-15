@@ -1,72 +1,143 @@
-import Nav from 'react-bootstrap/Nav';
-import { data } from "../../data/contact-data";
-import { socialdata } from "../../data/social-data";
-
-const socialIconStyles = {
-  fontSize: 48,
-  color: "white",
-  padding: "0 0.8rem",
-    marginLeft: "11px",
-};
-const headingFontsStyle = {
-  color: "white",
-  lineHeight: 1.5,
-  fontSize: 20,
+import { Container, Offcanvas, Navbar, Nav, NavDropdown, } from "react-bootstrap";
+import { FaPhone, FaFacebook, FaWhatsapp, FaYoutube, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa';
+const offcanvasToggle = {
+  color: "#fff",
+  backgroundColor: "cyan",
+  border: "1px solid #088413",
+  fontSize: 21,
   fontWeight: "bold",
+  letterSpacing: 1,
+  borderRadius: 4,
+  padding: "4px 6px",
+}
+  const offcanvasContainer= { 
+    padding: 0, 
+    fontSize: "1.59rem",
+    height: "100%" 
+  };
+  const OffcanvasNav = {
+    padding: 0,
+    backgroundColor: "cyan",
+    width: "50%",
+    height: "100%",
+  };
+  const offcanvasHeader = {
+    padding: 3,
+    backgroundColor: "#fff",
+    width: "100%",
+    height: "2%",
+    borderRadius: "5px",
+    margin: 2,
+  };
+  const offcanvasTitle = {
+    padding: 0,
+    height: "10%",
+    backgroundColor: "white",
+    border: "0.2rem solid teal",
+    boxShadow:"0 0 10px",
 
-};
+  };
+  const offcanvasBody = { padding: 0, height: "100%" };
+  const OffcanvasLinks = {
+    color: "#fff",
+    fontSize: "1.18rem",
+    textDecoration: "none",
+    padding: 8,
+    margin: 8,
+  };
 
-function Heading() {
+export function OffcanvasExample() {
   return (
     <>
-      <Nav className="justify-content-between d-flex text-light" activeKey="/home">
-        {data.map((e, i) => {
-          return (
-            <div className="phonesdiv" key={i}>
-              {e.contact.map((e, i) => {
-                return (
-                  <a
-                    style={headingFontsStyle}
-                    href={e.href}
-                    key={i}
-                    title={e.title}
-                  >
-                    <e.icons
-                      style={socialIconStyles}
-                    >
-                    </e.icons>
-                    {e.name}
-                  </a>
-                );
-              })}
-            </div>
-          );
-        })}
-        {socialdata.map((e, i) => {
-          return (
-            <div className="socialdiv" key={i}>
-              {e.socialLinks.map((e, i) => {
-                return (
-                  <a
-                    style={socialIconStyles}
-                    href={e.href}
-                    key={i}
-                    title={e.title}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span className="icons" key={i}>
-                      <e.icons className={socialIconStyles} />
-                    </span>
-                  </a>
-                );
-              })}
-            </div>
-          );
-        })}
-      </Nav>
+      <div>
+        <Navbar expand="lg"
+          style={{
+            borderRadius: "3px",
+            border: "1px solid black",
+            justifyContent: "center",
+            alignItems: "center",
+            fontWeight: 400,
+            fontWeight: "bolder",
+            lineHeight: "1em",
+          }}
+        >
+          <Navbar.Text
+          >
+            <a
+              href="tel:07445549727<"
+              title="Call evans exterior cleaning"
+              style={{ color: '#000' }} >
+              <FaPhone size={38} />
+              07445549727
+            </a>
+          </Navbar.Text>
+          <Navbar.Text>
+            <Nav.Link href="#action1">
+              <a 
+              href="mailto:info@evansexteriorcleaning.co.uk"
+              title="Email evans exterior cleaning"
+              style={{ color: '#000' }}
+              >
+                <FaEnvelope size={38} />
+                info@evansexteriorcleaning.co.uk
+              </a>
+            </Nav.Link>
+          </Navbar.Text>
+          <Navbar.Text
+          >
+            <a href="whatsapp://send?abid=+447445549727&text=Hello%2C%20World!" aria-label="Whatsapp" style={{color: '#000', padding: "0.5em 1em", }} >
+              <FaWhatsapp size={38} ></FaWhatsapp>
+            </a>
+            <a href="/" target="_blank" rel="noreferrer" aria-label="Facebook" style={{ color: '#000', padding: "0.5em 1em", }} >
+              <FaFacebook size={38}></FaFacebook>
+            </a>
+            <a href="/" target="_blank" rel="noreferrer" aria-label="Instagram"style={{ color: '#000', padding: "0.5em 1em", }} >
+              <FaInstagram size={38}></FaInstagram>
+            </a>
+            <a href="/" target="_blank" rel="noreferrer" aria-label="Youtube"style={{ color: '#000', padding: "0.5em 1em", }} >
+              <FaYoutube size={38} ></FaYoutube>
+            </a>
+          </Navbar.Text>
+        </Navbar>
+        <>
+        </>
+        {[true].map((expand) => (
+          <Navbar expand="lg" bg="light" variant="light" className="mb-0">
+            <Navbar.Toggle  aria-labelledby="offcanvasNavbar" aria-controls={`offcanvasNavbar-expand-${expand}`} 
+            
+              style={offcanvasToggle}
+            />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="start"
+              style={OffcanvasNav}
+
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-around flex-grow-1 pe-3 "
+                >
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="/">Driveway Cleaning</Nav.Link>
+                  <Nav.Link href="/">Why choose us</Nav.Link>
+                  <Nav.Link href="/">Services we offer</Nav.Link>
+                  <Nav.Link href="/">Areas we cover</Nav.Link>
+                  <Nav.Link href="/">Contact</Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Navbar>
+        ))}
+      </div>
+      <style>
+
+      </style>
     </>
   );
 }
 
-export default Heading
+export default OffcanvasExample;

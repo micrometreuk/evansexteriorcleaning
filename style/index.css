@@ -44,7 +44,7 @@ a {
   line-height: 1em;
   padding-top: 0.0rem;
   padding-bottom: 0.0rem;
-  background-color: #1aaac7;
+  background-color: cyan
 }
 
 .md-container {
@@ -54,8 +54,10 @@ a {
 
 .sml-card {
   width: 22rem;
-  margin: 1rem 0;
-  background-color: #1aaac7;
+  background-color: cyan;
+  font-weight: 400;
+  font-weight: bolder;
+  line-height: 1em;
 }
 
 .mml-card {
