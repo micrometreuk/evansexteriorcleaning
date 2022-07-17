@@ -80,6 +80,7 @@ export default function Services() {
                             rgba(0, 0, 0, 0.2)
                         ),
                         url(./images/11.webp);
+                    background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
                     min-height: 32vh;
@@ -113,6 +114,7 @@ export default function Services() {
                         ),
                     url(./images/1.webp);
                     background-position: center;
+                    background-size: cover;
                     background-repeat: no-repeat;
                     min-height: 32vh;
                     min-width: 30vh;
