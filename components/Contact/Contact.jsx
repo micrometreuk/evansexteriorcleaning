@@ -128,9 +128,9 @@ export function Contact() {
                   <p className="business-description">
                     Business Hours
                     <br />
-                    Monday-Friday from 07:30am - 7pm
+                    Monday-Friday from 08:00am - 6pm
                     <br />
-                    Saturday-Sunday from 07:30am - 7pm
+                    Saturday-Sunday from 09:00am - 5pm
                   </p>
                 </div>
                 <div>

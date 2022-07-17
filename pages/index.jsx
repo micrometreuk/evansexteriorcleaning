@@ -61,6 +61,7 @@ export function HomePage() {
               <Services />
               <WhyCard />
               <Map />
+              <Carousel />
               <CopyRight />
               </motion.div>
           </motion.div>
