@@ -63,15 +63,18 @@ a {
 .mml-card {
   width: 100%;
   margin: 0rem;
+  width: 33rem;
+  background-color: #fff;
+  font-weight: 400;
+  font-weight: bolder;
+  line-height: 1em;
 }
 
 .lml-card {
   width: 39rem;
-  background-color: cyan;
   margin: 0rem;
+  background: #0e5739;
 }
-
-
 .cntr-title {
   height: 80px;
   margin-top: 20px;

@@ -1,163 +1,190 @@
-import { Container, Row, Card } from "react-bootstrap";
 
-export default function Services() {
+export function Services() {
     return (
-        <div className="services">
-            <Container className="md-container">
-                <Container className="md-container">
-                    <Card className="mml-card ">
-                        <Card.Body>
-                            <Card.Title>
-                                <h1 className="display-1 text-center">
-                                    Services we offer
-                                </h1>
-                            </Card.Title>
-                        </Card.Body>
-                    </Card>
-                    <Container className="md-container">
-                        <Row className="justify-content-md-between">
-                            <Card className="sml-card">
-                                <Card.Body>
-                                    <Card.Title>
-                                        <p className="description">
-                                            Pressure washing, Driveways, and
-                                            Pathways.
-                                        </p>
-                                    </Card.Title>
-                                    <div className="pwashing">
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                            <Card className="sml-card">
-                                <Card.Body>
-                                    <Card.Title>
-                                        <p className="description">
-                                            Patios, Linchen/Black spot removal,
-                                            and Wall cleaning.
-                                        </p>
-                                    </Card.Title>
+        <div className="about-container">
+            <main>
+                <h1 className="title"> Services we offer</h1>
+                <div className="row">
+                    <div className="column">
+                        <div className="pwashing">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <p className="services">
+                                Pressure washing, Driveways, and
+                                Pathways.
+                            </p>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+                    </div>
 
-                                    <div className="patio">
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                            <Card className="sml-card">
-                                <Card.Body>
-                                    <Card.Title>
-                                        <p className="description">
-                                            Soft washing, Decking and Garden
-                                            furniture cleaning.
-                                        </p>
-                                    </Card.Title>
-                                    <div className="decking">
-                                        <br />
-                                        <br />
-                                        <br />
-                                        <br />
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Row>
-                    </Container>
-                </Container>
-            </Container>
+                    <div className="column">
+                        <div className="patio">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <p className="services">
+                                Patios, Linchen/Black spot removal,
+                                and Wall cleaning.
+                            </p>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                        </div>
+                    </div>
+                    <div className="column">
+                        <div className="patio">
+
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <p className="services">
+                                Soft washing, Decking and Garden
+                                furniture cleaning.
+                            </p>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </main>
+
             <style jsx>{`
-                .pwashing {
-                    padding: 0 0.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    background-image: linear-gradient(
-                            rgba(0, 0, 0, 0.3),
-                            rgba(0, 0, 0, 0.2)
-                        ),
-                        url(./images/11.webp);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    min-height: 32vh;
-                    min-width: 30vh;
-                }
-                .patio {
-                    padding: 0 0.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    background-image: linear-gradient(
-                            rgba(0, 0, 0, 0.3),
-                            rgba(0, 0, 0, 0.2)
-                        ),
-                        url(./images/6.webp);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    min-height: 32vh;
-                    min-width: 30vh;
-                }
+                .services
+                {
+                 color: #fff;   
+                   padding: 3;
+  font-weight: 400;
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 1em;
 
-                .decking {
-                    padding: 0 0.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    background-image: linear-gradient(
-                            rgba(0, 0, 0, 0.3),
-                            rgba(0, 0, 0, 0.2)
-                        ),
-                    url(./images/1.webp);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    min-height: 32vh;
-                    min-width: 30vh;
                 }
+          .pwashing{
+            background-image: 
+              
+              url(./images/11.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 38vh;
+            min-width: 42vh;
+          }
 
-                .drivemain {
-                    padding: 5rem 0;
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                .grid {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    margin-top: 3rem;
-                }
-                .card {
-                    margin: 1rem;
-                    flex-basis: 45%;
-                    padding: 1.5rem;
-                    text-align: left;
-                    color: inherit;
-                    text-decoration: none;
-                    border: 1px solid #eaeaea;
-                    border-radius: 10px;
-                    transition: color 0.15s ease, border-color 0.15s ease;
-                }
-                .card p {
-                    margin: 0;
-                    font-size: 1.25rem;
-                    line-height: 1.5;
-                }
-                @media (max-width: 600px) {
-                    .grid {
-                        width: 100%;
-                        flex-direction: column;
-                    }
-                }
-            `}</style>
+          .patio{
+            background-image: 
+              
+              url(./images/6.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 38vh;
+            min-width: 42vh;
+          }
+          .about-container {
+            padding: 0.1rem;
+            margin-top: 1.9rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+  
+          main {
+            padding: 16px;
+            padding: 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+          }
+          .column {
+            float: left;
+            width: 100%;
+            min-height: 68vh;
+            padding: 10px;
+            background: #ffffff;
+          }
+  
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+  
+          .title {
+            margin: 1rem;
+            font-size: 4rem;
+            text-align: center;
+      font-weight: 300;
+      line-height: 1.2;
+          }
+  
+          p {
+            text-align: left;
+            line-height: 1.7;
+            font-size: 2.09rem;
+            margin: .5rem;
+            flex-basis: 45%;
+            padding: 0.5rem;
+            text-align: left;
+            text-decoration: none;
+             font-weight: 300;
+          }
+          @media screen and (max-width: 600px) {
+            .column {
+              width: 100%;
+            }
+            p {
+              line-height: 1.8;
+            }
+          }
+        `}</style>
         </div>
     );
 }
+export default Services;
