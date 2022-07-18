@@ -1,105 +1,106 @@
 
 export function Services() {
-    return (
-        <div className="about-container">
-            <main>
-                <h1 className="title"> Services we offer</h1>
-                <div className="row">
-                    <div className="column">
-                        <div className="pwashing">
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <p className="services">
-                                Pressure washing, Driveways, and
-                                Pathways.
-                            </p>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                        </div>
-                    </div>
+  return (
+    <div className="about-container">
+      <main>
+        <h1 className="title"> Services we offer</h1>
+        <div className="row">
+          <div className="column">
+            <div className="pwashing">
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <p className="services">
+                Pressure washing, Driveways, and
+                Pathways.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
+          </div>
 
-                    <div className="column">
-                        <div className="patio">
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <p className="services">
-                                Patios, Linchen/Black spot removal,
-                                and Wall cleaning.
-                            </p>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
+          <div className="column">
+            <div className="patio">
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <p className="services">
+                Patios, Linchen/Black spot removal,
+                and Wall cleaning.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
 
-                        </div>
-                    </div>
-                    <div className="column">
-                        <div className="patio">
+            </div>
+          </div>
+          <div className="column">
+            <div className="patio">
 
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <p className="services">
-                                Soft washing, Decking and Garden
-                                furniture cleaning.
-                            </p>
-                            <br />
-                            <br />
-                            <br />
-                            <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <p className="services">
+                Soft washing, Decking and Garden
+                furniture cleaning.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
 
-                        </div>
-                    </div>
+            </div>
+          </div>
 
 
 
-                </div>
-            </main>
+        </div>
+      </main>
 
-            <style jsx>{`
+      <style jsx>{`
                 .services
                 {
                  color: #fff;   
-                   padding: 3;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bolder;
   line-height: 1em;
-
+  text-align: left;
+            flex-basis: 45%;
+            padding: 0.5rem;
                 }
           .pwashing{
             background-image: 
@@ -147,7 +148,11 @@ export function Services() {
             width: 100%;
             min-height: 68vh;
             padding: 10px;
-            background: #ffffff;
+            margin: 10px;
+            border: 1px solid #ffffff;
+          border-radius: 10px;
+          transition: color 0.15s ease, border-color 0.15s ease;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           }
   
           .row:after {
@@ -165,15 +170,7 @@ export function Services() {
           }
   
           p {
-            text-align: left;
-            line-height: 1.7;
-            font-size: 2.09rem;
-            margin: .5rem;
-            flex-basis: 45%;
-            padding: 0.5rem;
-            text-align: left;
-            text-decoration: none;
-             font-weight: 300;
+
           }
           @media screen and (max-width: 600px) {
             .column {
@@ -184,7 +181,7 @@ export function Services() {
             }
           }
         `}</style>
-        </div>
-    );
+    </div>
+  );
 }
 export default Services;
