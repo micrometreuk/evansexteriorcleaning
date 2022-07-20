@@ -51,8 +51,7 @@ export function Contact() {
             <div className="right-column">
               <div className="contact">
                 <p className="contact-description">
-                  The easiest way to contact us is by giving us a call to
-                  arrange a viewing of the work and a no-obligation quote.
+                  The easiest way to contact us is by giving us a call.
                   <br />
                   <a
                     href="tel:07445549727<"
@@ -130,7 +129,7 @@ export function Contact() {
                     <br />
                     Monday-Friday from 08:00am - 6pm
                     <br />
-                    Saturday-Sunday from 09:00am - 5pm
+                    Saturday-Sunday Closed
                   </p>
                 </div>
                 <div>
