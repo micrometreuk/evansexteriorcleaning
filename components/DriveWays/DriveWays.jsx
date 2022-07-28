@@ -27,7 +27,7 @@ export function BeforeImage() {
             <motion.div className="single" initial="exit" animate="enter" exit="exit">
                 <motion.img
                     variants={imageVariants}
-                    src={`./images/driveway/drive1.jpg`}
+                    src={`./images/driveway/drive3.jpg`}
                     alt="driveways pics" />
             </motion.div>
             <style>
@@ -54,7 +54,7 @@ export function AfterImage() {
             <motion.div className="single" initial="exit" animate="enter" exit="exit">
                 <motion.img
                     variants={imageVariants}
-                    src={`./images/driveway/drive2.jpg`}
+                    src={`./images/driveway/drive4.jpg`}
                     alt="driveways pics" />
             </motion.div>
             <style>
