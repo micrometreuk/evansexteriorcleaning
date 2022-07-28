@@ -77,8 +77,7 @@ export function ServicesPatio() {
                 <div className="dwashing-grid">
                     <div className="dwashing-heading">
                         <h1 className="dwashing-title">
-                        Pressure washing, Driveways, and
-                              Pathways.
+                              Patios, Linchen/Black spot removal, and Wall cleaning.
                         </h1>
                     </div>
                 </div>
@@ -149,8 +148,7 @@ export function ServicesDecking() {
                 <div className="dwashing-grid">
                     <div className="dwashing-heading">
                         <h1 className="dwashing-title">
-                        Pressure washing, Driveways, and
-                              Pathways.
+                              Soft washing, Decking and Garden furniture cleaning.
                         </h1>
                     </div>
                 </div>
@@ -165,7 +163,7 @@ export function ServicesDecking() {
                             rgba(0, 0, 0, 0.3),
                             rgba(0, 0, 0, 0.2)
                         ),
-                        url(./images/1.webp);
+                        url(./images/patio.jpg);
                     background-repeat: no-repeat;
                     background-size: cover;
                     position: relative;
