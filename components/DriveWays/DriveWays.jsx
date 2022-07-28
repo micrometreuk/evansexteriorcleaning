@@ -98,22 +98,18 @@ export function DrivewayHero() {
           <Row className="justify-content-md-between">
             <Card className="lml-card">
               <Card.Body>
-                <Card.Text>
                   <p className="description text-center">
                     Before
                   </p>
-                </Card.Text>
                 <BeforeImage/>
               </Card.Body>
             </Card>
   
             <Card className="lml-card">
               <Card.Body>
-                <Card.Text>
                   <p className="description text-center">
                     After
                   </p>
-                </Card.Text>
                 <AfterImage/>
               </Card.Body>
             </Card>
