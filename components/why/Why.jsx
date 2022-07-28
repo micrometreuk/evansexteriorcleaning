@@ -11,15 +11,15 @@ export function WhyUs() {
           </div>
           <div className="column">
             <p>
-              Fully insured
+            &#9642;  Fully insured
               <br />
-              Honest and reliable
+             &#9642;   Honest and reliable
               <br />
-              Friendly and trustworthy
+              &#9642;  Friendly and trustworthy
               <br />
-              Efficient
+              &#9642;   Efficient
               <br />
-              Highly experienced
+              &#9642;   Highly experienced
             </p>
           </div>
         </div>

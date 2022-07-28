@@ -129,7 +129,9 @@ export function Contact() {
                     <br />
                     Monday-Friday from 08:00am - 6pm
                     <br />
-                    Saturday-Sunday Closed
+                    Saturday from 09:00am - 5pm
+                    <br />
+                    Sunday Closed
                   </p>
                 </div>
                 <div>
