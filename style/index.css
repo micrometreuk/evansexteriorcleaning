@@ -2,10 +2,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 
-
 body {
   background: #fff;
   font-family: sans-serif;
+  height:100%;
 }
 
 
@@ -17,7 +17,7 @@ a {
 
 .description {
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
 
 }
@@ -47,6 +47,10 @@ a {
   background-color: cyan
 }
 
+.be-container {
+  max-width: 50%;
+  padding-top: 0rem;
+}
 .md-container {
   max-width: 100%;
   padding-top: 0rem;
@@ -63,22 +67,24 @@ a {
 .mml-card {
   width: 100%;
   margin: 0rem;
-  width: 33rem;
-  background-color: #fff;
+  width: 46rem;
   font-weight: 400;
   font-weight: bolder;
   line-height: 1em;
 }
 
+.nml-card {
+  width: 29rem;
+  margin: 0rem;
+  background-color: #fff;
+}
 .lml-card {
   width: 39rem;
   margin: 0rem;
-  background: #0e5739;
 }
 .cntr-title {
   height: 80px;
   margin-top: 20px;
-  border-top: 1px solid #ccc;
   padding-top: 0.0rem;
   padding-bottom: 0.0rem;
 }

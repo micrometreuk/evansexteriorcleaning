@@ -7,6 +7,7 @@ import Moto from "../components/Moto/Moto";
 import DriveWays from "../components/DriveWays/DriveWays";
 import Carousel from "../components/Carousel/Carousel";
 import Services from "../components/services/Services";
+import BeforeAfter from "../components/BeforeAfter";
 import WhyCard from "../components/why/Why";
 import Map from "../components/Map/Map";
 import NavBarFooter from "../components/nav/NavbarFooter";
