@@ -51,6 +51,13 @@ export function OffcanvasExample() {
     <>
         <Navbar expand="lg"
           style={{
+            marginTop: "1.9rem",
+
+            position: "fixed",
+            top:0,
+            right:0,
+            left:0,
+            zIndex:1030,
             borderRadius: "3px",
             border: "1px solid black",
             justifyContent: "center",
@@ -98,7 +105,24 @@ export function OffcanvasExample() {
         </Navbar>
         <>
         </>
-          <Navbar expand="lg" bg="light" variant="light" className="mb-0">
+          <Navbar 
+                    style={{
+                      position: "sticky",
+                      marginTop: "3.6rem",
+
+                      top:0,
+                      right:0,
+                      left:0,
+                      zIndex:1050,
+                      borderRadius: "3px",
+                      border: "1px solid black",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      fontWeight: 400,
+                      fontWeight: "bolder",
+                      lineHeight: "1em",
+                    }}
+          expand="lg" bg="light" variant="light" className="mb-0">
             <Navbar.Toggle  aria-labelledby="offcanvasNavbar" aria-controls={`offcanvasNavbar-expand`} 
             
               style={offcanvasToggle}
