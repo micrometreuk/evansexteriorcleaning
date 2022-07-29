@@ -51,8 +51,7 @@ export function OffcanvasExample() {
     <>
         <Navbar expand="lg"
           style={{
-            marginTop: "1.9rem",
-
+            marginTop: "2.9rem",
             position: "fixed",
             top:0,
             right:0,
@@ -108,7 +107,7 @@ export function OffcanvasExample() {
           <Navbar 
                     style={{
                       position: "sticky",
-                      marginTop: "3.6rem",
+                      marginTop: "0.6rem",
 
                       top:0,
                       right:0,
