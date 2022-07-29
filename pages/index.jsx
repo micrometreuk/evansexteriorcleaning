@@ -43,12 +43,14 @@ const inputs = {
 };
 export function HomePage() {
   return (
-    <div style={styles.homePage}>
+    <div 
+    >
       <Layout>
       <motion.section
           exit={{ opacity: 0 }}
         >
           <motion.div
+    style={{marginTop: "46rem"}}
             variants={content}
             animate="animate"
             initial="initial"
