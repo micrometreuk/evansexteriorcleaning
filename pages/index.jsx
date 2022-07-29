@@ -50,7 +50,7 @@ export function HomePage() {
           exit={{ opacity: 0 }}
         >
           <motion.div
-    style={{marginTop: "46rem"}}
+    style={{marginTop: "12rem"}}
             variants={content}
             animate="animate"
             initial="initial"
