@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Layout from "../components/layout";
 import styles from "../style/Home.module.css";
 import DriveWays from "../components/DriveWays/DriveWays";
+import DrivewayNotes from "../components/DrivewayNotes";
 import NavBarFooter from "../components/nav/NavbarFooter";
 import CopyRight from "../components/Copyright";
 const content = {
@@ -49,6 +50,7 @@ export default function DrivePage() {
               variants={title}
             >
               <DriveWays />
+              <DrivewayNotes />
               <CopyRight />
               </motion.div>
           </motion.div>

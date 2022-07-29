@@ -1,3 +1,4 @@
+import { Container, Row, Card, Button } from 'react-bootstrap'
 export function ServicesWashing() {
     return (
         <div className="dwashing-container">
@@ -211,10 +212,24 @@ export function ServicesDecking() {
         </div>
     );
 }
+export function ServicesTitle() {
 
-export function Driveway() {
     return (
-        <div className="driveway">
+        <Container className="md-container p-4">
+            <div className="cntr-title">
+                <h1 className="display-1 text-center">Services we offer
+</h1>
+            </div>
+        </Container>
+    );
+}
+
+
+export function ServicesOfferd() {
+    return (
+        <div className="servicesof">
+
+            <ServicesTitle />
             <ServicesWashing />
             <ServicesPatio />
             <ServicesDecking />
@@ -222,4 +237,4 @@ export function Driveway() {
     );
 }
 
-export default Driveway;
+export default ServicesOfferd;
