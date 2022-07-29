@@ -184,11 +184,79 @@ export function DriveAbout() {
 }
 
 
+// styles
+const pageStyles = {
+  color: "#232129",
+  padding: 96,
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
+const listStyles = {
+  marginBottom: 96,
+  paddingLeft: 0,
+}
+
+const linkStyle = {
+  color: "#8954A8",
+  fontWeight: "bold",
+  fontSize: "1.25rem",
+  verticalAlign: "5%",
+}
+
+const docLinkStyle = {
+  ...linkStyle,
+  listStyleType: "none",
+  marginBottom: 24,
+}
+
+
+const docLink = {
+  text: "We value our customers and are proud that a number of our clients come direct from the recommendations of others in the local area.",
+  text2: "Cleaning your driveways, walkways and patios can add upwards of £10,000 in value to your property. If you are struggling to sell or rent your property a clean exterior can make a big difference.",
+  text3: "All of our staff are DBS checked. So you can be sure that any staff working at your home are honest and trustworthy.",
+  color: "#8954A8",
+}
+
+export function DriveMain() {
+    return (
+        <main style={pageStyles}>
+            <ul style={listStyles}>
+                <li style={docLinkStyle}>
+                    <div
+                        style={linkStyle}
+                    >
+                        {docLink.text}
+                    </div>
+                </li>
+
+                <li style={docLinkStyle}>
+                    <div
+                        style={linkStyle}
+                    >
+                        {docLink.text2}
+                    </div>
+                </li>
+
+                <li style={docLinkStyle}>
+                    <div
+                        style={linkStyle}
+                    >
+                        {docLink.text3}
+                    </div>
+                </li>
+
+            </ul>
+        </main>
+    );
+}
+
+
+
 export function DrivewayNotes() {
     return (
         <div className="driveway">
             <DrivePledge />
             <DriveAbout />
+            <DriveMain />
         </div>
     );
 }
