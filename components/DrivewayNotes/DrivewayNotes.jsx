@@ -187,8 +187,12 @@ export function DriveAbout() {
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  padding: 6,
+ flex:1,
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
 }
 const listStyles = {
   marginBottom: 96,
