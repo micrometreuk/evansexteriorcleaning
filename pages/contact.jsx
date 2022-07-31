@@ -41,6 +41,7 @@ export function ContactPage() {
           exit={{ opacity: 0 }}
         >
           <motion.div
+              style={{marginTop: "12rem"}}
             variants={content}
             animate="animate"
             initial="initial"

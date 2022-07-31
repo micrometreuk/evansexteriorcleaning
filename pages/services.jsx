@@ -41,6 +41,7 @@ export default function ServicesPage() {
           exit={{ opacity: 0 }}
         >
           <motion.div
+              style={{marginTop: "9rem"}}
             variants={content}
             animate="animate"
             initial="initial"
