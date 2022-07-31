@@ -57,8 +57,6 @@ export function OffcanvasExample() {
             right:0,
             left:0,
             zIndex:1030,
-            borderRadius: "3px",
-            border: "1px solid black",
             justifyContent: "center",
             alignItems: "center",
             fontWeight: 400,
